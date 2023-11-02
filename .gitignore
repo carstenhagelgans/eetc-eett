@@ -1,0 +1,17 @@
+/*build*
+/notes
+.settings
+.cproject
+.project
+.idea
+.vscode
+.vs
+CMakeSettings.json
+*.*~
+*.sublime-project
+*.sublime-workspace
+*.zip
+/deps
+/.clang-tidy
+.pkg.lock
+.pkg.mutex
