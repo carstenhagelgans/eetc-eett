@@ -59,6 +59,14 @@ endif ()
 file(GLOB_RECURSE eetc-eett-files src/*.cc)
 add_library(eetc-eett ${eetc-eett-files})
 target_include_directories(eetc-eett PUBLIC include)
-target_link_libraries(eetc-eett PUBLIC cista soro-s utl)
+target_link_libraries(eetc-eett PUBLIC cista soro-lib utl)
 target_compile_features(eetc-eett PUBLIC cxx_std_20)
 target_compile_options(eetc-eett PRIVATE ${eetc-eett_compile-options})
+
+# --- TEST ---
+file(GLOB_RECURSE eetc-eett-files test/*.cc)
+add_executable(eetc-eett-test ${eetc-eett-files})
+
+target_compile_options(eetc-eett-test PRIVATE ${eetc-eett-compile-options})
+
+target_link_libraries(eetc-eett-test PUBLIC doctest eetc-eett)
