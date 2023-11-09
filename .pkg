@@ -2,6 +2,10 @@
   url=git@github.com:felixguendling/cista.git
   branch=master
   commit=7d56bbdb0f653acdb04f21022e8071d8f67e0c66
+[date]
+  url=git@github.com:motis-project/date.git
+  branch=master
+  commit=17429576f2468e1deb487c1d0fee91d3cfd54814
 [doctest]
   url=git@github.com:motis-project/doctest.git
   branch=master
